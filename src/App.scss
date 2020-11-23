@@ -1,0 +1,46 @@
+@font-face{
+  font-family: 'Regular';
+  src: url('./assets/fonts/OpenSans-SemiBold.ttf');
+}
+@font-face{
+  font-family: 'Bold';
+  src: url('./assets/fonts/OpenSans-Bold.ttf');
+}
+
+body {
+  background: #fff;
+}
+// Navigation CSS
+body #fp-nav.fp-right {
+    right: 0;
+  
+}
+#fp-nav.fp-right ul li a span:nth-of-type(2), .fp-slidesNa.fp-right ul li a span:nth-of-type(2) {
+    width: 12px;
+    height: 2px;
+    background: red;
+    display: block;
+    top: 8px;
+    position: relative;
+    border-radius: 0;
+    &:hover {
+      width: 24px;
+      height: 4px;
+      background: red;
+      border-radius: 0;
+    }
+} 
+#fp-nav.fp-right ul li a.active span:nth-of-type(2), .fp-slidesNa.fp-right ul li a.active span:nth-of-type(2) {
+  width: 24px;
+  height: 4px;
+  background: red;
+}
+
+ .logo-menu svg, .hexagon, .ac, line, .navigation, .open-nav, .menu-shelf ul.tabs li>a:after, #fp-nav li a, button:after, button, .view-case-study, .view-case-study:after, .view-case-study>span, ul.pagination, .prev-next-buttons a:hover>span, ul.social a:before, .view-case-study.clickme {
+    -webkit-transition: .5s all cubic-bezier(.87,-.41,.19,1.44);
+    transition: .5s all cubic-bezier(.87,-.41,.19,1.44);
+}
+#fullPage {
+  transition: all 700ms ease 0s;
+}
+// END Navigation CSS

@@ -1,0 +1,71 @@
+#Entry {
+    // background-image: url(https://www.alexcoven.com/assets/img/sidepocket-desktop-head-flip.jpg);
+    height: 937px;
+    background-position-y: -20px;
+    background-size: 120%;
+}
+
+// hello
+section.hello {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    height: 100vh;
+}
+section.hello h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    margin-bottom: 0px !important;
+    top: 0;
+    font-size: 30px;
+     -webkit-transition: all 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -moz-transition: all 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -o-transition: all 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition: all 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+
+    -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -moz-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    -o-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+    transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+}
+.fp-viewing-Hello section.hello h1 {
+    left: 50%;
+}
+section.hello h1 svg {
+    width: 430px;
+    height: 340px;
+}
+section.hello h1 svg .line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 41px;
+}
+section.hello h1 svg #hello_dot .dot {
+    fill: red;
+}
+section.hello h1 svg #hello_l1 .line,
+section.hello h1 svg #hello_l2 .line {
+    stroke: red;
+}
+section.hello h1#hello_h1.go-right {
+    left: unset;
+    right: 0;
+    transition: 3s;
+}
+ section.hello h1 p {
+    opacity: 0;
+    right: 0;
+    position: absolute;
+    transition: opacity 5s ease-in-out;
+ }
+.fp-viewing-Hello section.hello h1 p {
+    opacity: 1;
+    left: 0;
+}
